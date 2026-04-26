@@ -36,6 +36,20 @@ tools: ["read", "search", "web"]
 
 ---
 
+## 既定アーキテクチャの助言方針
+
+Orchestrator から別指定がない新規 .NET アプリケーションについて相談された場合、次を既定として助言します。
+
+- 最新の安定版 .NET SDK / ASP.NET Core。preview / RC は明示要件がある場合だけ。
+- Blazor Web App の Interactive Server render mode。
+- Fluent UI Blazor による UI component、theme、アクセシビリティ対応。
+- .NET Aspire AppHost / ServiceDefaults による起動、依存関係、observability。
+- 永続化が必要な場合だけ EF Core。database が必要な場合は SQL Server を第一候補。
+- xUnit、`TimeProvider`、`FakeTimeProvider`、Options pattern、User Secrets / 環境変数を前提にする。
+- 小規模な機能では過剰な layer を避け、複雑な業務ロジックや外部依存が増えた場合だけ Domain / Application / Infrastructure 分離を提案する。
+
+---
+
 ## 作業開始時に確認すること
 
 | 確認項目 | 見る場所 / コマンド |

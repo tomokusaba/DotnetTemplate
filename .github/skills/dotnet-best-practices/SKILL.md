@@ -12,6 +12,12 @@ license: MIT
 
 ---
 
+## 既定アーキテクチャ
+
+指定がない新規 .NET アプリケーションでは、最新安定版 ASP.NET Core、Blazor Web App の Interactive Server、Fluent UI Blazor、.NET Aspire AppHost / ServiceDefaults を既定にする。永続化が必要な場合だけ EF Core を使い、DB が必要な場合は SQL Server を第一候補にする。preview / RC、認証、過剰な layer は明示要件がある場合だけ追加する。
+
+---
+
 ## 1. まず確認すること
 
 | 確認項目 | 見る場所 / コマンド |
@@ -461,26 +467,7 @@ var agent = new ChatClientAgent(
 
 ---
 
-## 16. レビュー時のチェックリスト
-
-- [ ] 依存関係が DI で注入されている
-- [ ] 現在時刻は `TimeProvider` から取得している
-- [ ] `DateTime.Now` / `DateTimeOffset.Now` を使っていない
-- [ ] テストは xUnit で書かれている
-- [ ] 時刻依存テストは `FakeTimeProvider` を使っている
-- [ ] async 処理で `.Result` / `.Wait()` を使っていない
-- [ ] `CancellationToken` が適切に渡されている
-- [ ] 設定は strongly-typed options と validation を使っている
-- [ ] secret がソースコード、設定ファイル、ログに含まれていない
-- [ ] ログは構造化され、個人情報や機密情報を含まない
-- [ ] AI 操作は Microsoft Agent Framework を使っている
-- [ ] AI ツール呼び出しは最小権限で監査可能
-- [ ] 日本語文言は必要に応じてリソース化されている
-- [ ] `dotnet build` と `dotnet test` が通る
-
----
-
-## 17. 公式参照
+## 16. 公式参照
 
 | リソース | URL |
 |---|---|

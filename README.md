@@ -21,6 +21,34 @@
 - 日本語環境として UTF-8、Windows / PowerShell、`ja-JP`、`Asia/Tokyo` を考慮します。
 - ASP.NET Core / Razor / Blazor / MVC / Fluent UI Blazor ではアクセシビリティをレビュー観点に含めます。
 
+## 既定アーキテクチャ
+
+ユーザーから明示的な指定がない場合、新規 .NET アプリケーションでは次を既定として採用します。既存プロジェクトでは既存構成を優先し、必要な差分だけ適用します。
+
+| 項目 | 既定 |
+|---|---|
+| Runtime / Framework | 最新の安定版 .NET SDK と ASP.NET Core。preview / RC は明示指定がある場合だけ使用 |
+| UI | Blazor Web App の Interactive Server render mode |
+| Component library | Fluent UI Blazor (`Microsoft.FluentUI.AspNetCore.Components`) |
+| App orchestration | .NET Aspire の AppHost と ServiceDefaults |
+| Data access | 永続化が必要な場合のみ EF Core |
+| Database | DB が必要な場合は SQL Server を第一候補 |
+| Testing | xUnit。時刻依存テストは `FakeTimeProvider` |
+| Time / locale | 内部処理は UTC、表示・入力は `ja-JP` / `Asia/Tokyo` を考慮 |
+| Configuration | Options pattern、User Secrets、環境変数。secret はリポジトリに含めない |
+| Observability | Aspire ServiceDefaults と OpenTelemetry を優先 |
+| Accessibility | Fluent UI Blazor / Blazor UI では WCAG 2.2、JIS X 8341-3、keyboard / focus / label / ARIA を確認 |
+
+既定の solution 構成は、規模に応じて最小構成から始めます。
+
+| 用途 | 例 |
+|---|---|
+| Web UI | `src\<ProductName>.Web` |
+| Aspire AppHost | `src\<ProductName>.AppHost` |
+| Aspire ServiceDefaults | `src\<ProductName>.ServiceDefaults` |
+| Tests | `tests\<ProductName>.Tests` |
+| Domain / Application / Infrastructure | 複雑な業務ロジックや外部依存が増えた場合だけ分割 |
+
 ## Custom Agents
 
 `.github\agents` には、.NET / C# 開発向けの役割分担を定義しています。

@@ -25,6 +25,21 @@ tools: ["read", "search", "agent"]
 
 ---
 
+## 既定アーキテクチャ
+
+ユーザーから明示的な指定がない新規 .NET アプリケーションでは、次を既定として Writer に伝えます。既存プロジェクトでは既存構成を優先し、無理に置き換えません。
+
+- 最新の安定版 .NET SDK / ASP.NET Core を使う。preview / RC は明示指定がある場合だけ使う。
+- UI は Blazor Web App の Interactive Server render mode を基本にする。
+- UI component は Fluent UI Blazor を基本にする。
+- App orchestration、外部依存、observability は .NET Aspire AppHost / ServiceDefaults を基本にする。
+- 永続化が必要な場合だけ EF Core を使う。
+- database が必要な場合は SQL Server を第一候補にする。
+- 認証・認可は要件がある場合だけ追加し、ASP.NET Core Identity / OpenID Connect など要件に合う標準機能を優先する。
+- 小規模な要件では過剰な layer を作らず、複雑な業務ロジックや外部依存が増えた場合だけ Domain / Application / Infrastructure を分ける。
+
+---
+
 ## Agent 構成と権限
 
 | Agent | 役割 | 書き込み権限 |
