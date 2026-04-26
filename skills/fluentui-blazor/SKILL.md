@@ -125,6 +125,7 @@ dotnet add package Microsoft.FluentUI.AspNetCore.Components.Icons
 
 <FluentIcon Value="@(Icons.Regular.Size24.Save)" />
 <FluentIcon Value="@(Icons.Filled.Size20.Delete)" Color="@Color.Error" />
+<FluentIcon Value='@(Icon.FromImageUrl("/images/logo.png"))' />
 ```
 
 パターン:
@@ -137,6 +138,7 @@ Icons.[Variant].[Size].[Name]
 - Size: `Size12`, `Size16`, `Size20`, `Size24`, `Size28`, `Size32`, `Size48`
 
 文字列ベースの icon name は使わない。Fluent UI Blazor の icon は strongly typed class を使う。
+独自画像を icon として使う場合は、文字列名ではなく `Icon.FromImageUrl(...)` を使う。
 
 ---
 
