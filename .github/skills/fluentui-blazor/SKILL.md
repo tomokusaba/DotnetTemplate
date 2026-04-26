@@ -1,6 +1,7 @@
 ---
-name: fluentui-blazor-ja
+name: fluentui-blazor
 description: "Microsoft.FluentUI.AspNetCore.Components を使う Blazor アプリ開発を日本語環境向けに支援する Skill。セットアップ、providers、icons、forms、dialogs、toasts、DataGrid、layout、navigation、theme、アクセシビリティ、日本語 UI、Blazor Server / WebAssembly / Web App を扱う。"
+license: MIT
 ---
 
 # Fluent UI Blazor — 日本語環境向け Skill

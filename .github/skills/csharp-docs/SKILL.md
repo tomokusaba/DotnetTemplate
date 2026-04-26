@@ -1,6 +1,7 @@
 ---
-name: csharp-docs-ja
+name: csharp-docs
 description: "C# / .NET の XML ドキュメントコメント、API ドキュメント、サンプルコード、C# 13 / C# 14 など新しい言語仕様の説明を日本語環境向けに支援する Skill。日本語の文体、UTF-8、cref、inheritdoc、DocFX、NuGet 公開、LangVersion 互換性を扱う。"
+license: MIT
 ---
 
 # C# ドキュメント — 日本語環境向け Skill

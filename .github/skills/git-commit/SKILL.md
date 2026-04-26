@@ -1,6 +1,7 @@
 ---
-name: git-commit-ja
+name: git-commit
 description: "Git commit を日本語環境で安全に作成するための Skill。Conventional Commits、差分分析、論理単位の staging、コミットメッセージ生成、PowerShell、UTF-8、機密情報チェック、フック失敗時の対応、Co-authored-by などの trailer を扱う。"
+license: MIT
 ---
 
 # Git Commit — 日本語環境向け Skill

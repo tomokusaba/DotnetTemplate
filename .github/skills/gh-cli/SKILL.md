@@ -1,6 +1,7 @@
 ---
-name: gh-cli-ja
+name: gh-cli
 description: "GitHub CLI (gh) を日本語環境で安全かつ効率的に使うための Skill。認証、repository、issue、pull request、review、Actions、releases、gh api、JSON/JQ、GitHub Enterprise、Windows PowerShell、文字コード、トークン管理を扱う。"
+license: MIT
 ---
 
 # GitHub CLI (`gh`) — 日本語環境向け Skill
@@ -462,40 +463,7 @@ gh release delete v1.0.0 --yes
 
 ---
 
-## 14. よくあるタスク
-
-### PR の状態を確認する
-
-```powershell
-gh pr status
-gh pr view --json number,title,state,reviewDecision,mergeable,statusCheckRollup
-gh pr checks --watch
-```
-
-### 自分に割り当てられた issue を見る
-
-```powershell
-gh issue list --assignee "@me" --state open --json number,title,labels
-```
-
-### release notes 用の PR 一覧を出す
-
-```powershell
-gh pr list --state merged --base main --limit 100 `
-  --json number,title,mergedAt,author `
-  --jq '.[] | "- #\(.number) \(.title) (@\(.author.login))"'
-```
-
-### workflow 失敗ログを見る
-
-```powershell
-$run = gh run list --status failure --limit 1 --json databaseId | ConvertFrom-Json
-gh run view $run[0].databaseId --log
-```
-
----
-
-## 15. トラブルシュート
+## 14. トラブルシュート
 
 | 症状 | 確認すること |
 |---|---|
@@ -510,7 +478,7 @@ gh run view $run[0].databaseId --log
 
 ---
 
-## 16. レビュー時チェックリスト
+## 15. レビュー時チェックリスト
 
 - [ ] 対象 repository / host が明確
 - [ ] 認証状態と token scope が適切
@@ -524,7 +492,7 @@ gh run view $run[0].databaseId --log
 
 ---
 
-## 17. 公式参照
+## 16. 公式参照
 
 | リソース | URL |
 |---|---|

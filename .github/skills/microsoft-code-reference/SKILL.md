@@ -1,6 +1,7 @@
 ---
-name: microsoft-code-reference-ja
+name: microsoft-code-reference
 description: "Microsoft / Azure / .NET SDK の API リファレンス、公式コードサンプル、メソッド署名、パッケージ名、認証、移行、非推奨 API を日本語環境で検証する Skill。Microsoft Learn MCP、mslearn CLI、C#、PowerShell、Azure CLI、Python、TypeScript を扱う。"
+license: MIT
 ---
 
 # Microsoft Code Reference — 日本語環境向け Skill

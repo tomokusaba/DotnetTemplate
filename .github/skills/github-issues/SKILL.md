@@ -1,6 +1,7 @@
 ---
-name: github-issues-ja
+name: github-issues
 description: "GitHub Issues の作成、更新、検索、triage、ラベル、assignee、milestone、issue type、Projects、sub-issues、dependencies、コメント、テンプレート運用を日本語環境向けに支援する Skill。gh CLI、gh api、MCP、Windows PowerShell、UTF-8、日本語本文を扱う。"
+license: MIT
 ---
 
 # GitHub Issues — 日本語環境向け Skill

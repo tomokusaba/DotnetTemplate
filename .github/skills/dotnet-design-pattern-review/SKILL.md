@@ -1,6 +1,7 @@
 ---
-name: dotnet-design-pattern-review-ja
+name: dotnet-design-pattern-review
 description: ".NET / C# コードの設計パターン、SOLID、DI、Repository、Provider、Factory、Command Handler、ResourceManager、TimeProvider、Microsoft Agent Framework、xUnit テスト容易性を日本語環境向けにレビューする Skill。原則としてコード変更ではなく、具体的な改善提案を行う。"
+license: MIT
 ---
 
 # .NET / C# Design Pattern Review — 日本語環境向け Skill

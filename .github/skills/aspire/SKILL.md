@@ -1,6 +1,7 @@
 ---
-name: aspire-ja
+name: aspire
 description: ".NET Aspire の AppHost、分散アプリ構成、サービス検出、統合、ダッシュボード、テスト、デプロイ、トラブルシュートを日本語環境で支援するための Skill。Windows/PowerShell、日本語チーム運用、Azure Japan リージョン、UTF-8、ローカライズ要件を考慮する。"
+license: MIT
 ---
 
 # .NET Aspire — 日本語環境向け分散アプリ Skill

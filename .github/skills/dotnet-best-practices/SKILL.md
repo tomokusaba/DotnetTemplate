@@ -1,6 +1,7 @@
 ---
-name: dotnet-best-practices-ja
+name: dotnet-best-practices
 description: ".NET / C# の設計、DI、設定、ログ、例外、非同期、xUnit テスト、TimeProvider、Microsoft Agent Framework による AI 操作を日本語環境向けに支援する Skill。Windows/PowerShell、UTF-8、Asia/Tokyo、ローカライズ、セキュリティ、CI 品質を扱う。"
+license: MIT
 ---
 
 # .NET / C# Best Practices — 日本語環境向け Skill
@@ -479,35 +480,7 @@ var agent = new ChatClientAgent(
 
 ---
 
-## 17. よくある依頼への対応
-
-### 既存コードをベストプラクティスに合わせる
-
-1. DI、時刻、設定、ログ、例外、テスト、AI 操作を調査する
-2. `DateTime.Now` / `DateTimeOffset.Now` を `TimeProvider` 注入へ置き換える
-3. テストを xUnit で追加または更新する
-4. AI 操作を Microsoft Agent Framework の adapter / service に集約する
-5. build と test で回帰を確認する
-
-### 時刻依存処理を改善する
-
-1. 現在時刻の直接参照を検索する
-2. 対象サービスへ `TimeProvider` を注入する
-3. DI に `TimeProvider.System` を登録する
-4. xUnit テストで `FakeTimeProvider` を使う
-5. UTC、タイムゾーン、境界値のテストを追加する
-
-### AI 機能を追加する
-
-1. Agent Framework の provider と `IChatClient` 構成を決める
-2. agent の責務、instructions、tools、出力形式を設計する
-3. secret と権限を安全に設定する
-4. AI 呼び出しを application service から抽象化する
-5. 実モデルに依存しない xUnit テストを追加する
-
----
-
-## 18. 公式参照
+## 17. 公式参照
 
 | リソース | URL |
 |---|---|

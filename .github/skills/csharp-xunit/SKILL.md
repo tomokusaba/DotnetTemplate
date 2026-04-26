@@ -1,6 +1,7 @@
 ---
-name: csharp-xunit-ja
+name: csharp-xunit
 description: "C# / .NET の xUnit テスト作成を日本語環境で支援する Skill。Arrange-Act-Assert、Fact/Theory、データ駆動テスト、非同期テスト、モック、テスト命名、Windows/PowerShell、UTF-8、Asia/Tokyo、ロケール依存の注意点を扱う。"
+license: MIT
 ---
 
 # C# xUnit — 日本語環境向けテスト Skill

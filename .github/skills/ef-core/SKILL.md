@@ -1,6 +1,7 @@
 ---
-name: ef-core-ja
+name: ef-core
 description: "Entity Framework Core の DbContext 設計、Entity 設計、LINQ クエリ、性能、Migration、トランザクション、セキュリティ、xUnit テストを日本語環境向けに支援する Skill。SQL Server / SQLite / PostgreSQL、Windows/PowerShell、UTF-8、TimeProvider、公式 Microsoft Learn 参照を扱う。"
+license: MIT
 ---
 
 # Entity Framework Core — 日本語環境向け Skill

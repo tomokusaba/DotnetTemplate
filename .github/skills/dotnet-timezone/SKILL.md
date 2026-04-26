@@ -1,6 +1,7 @@
 ---
-name: dotnet-timezone-ja
+name: dotnet-timezone
 description: ".NET / C# のタイムゾーン処理を日本語環境向けに支援する Skill。TimeZoneInfo、TimeZoneConverter、NodaTime、TimeProvider、UTC 保存、Asia/Tokyo、Windows/IANA ID、DST、スケジューリング、API 設計、住所・都市からのタイムゾーン解決を扱う。"
+license: MIT
 ---
 
 # .NET Timezone — 日本語環境向け Skill

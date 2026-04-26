@@ -1,6 +1,7 @@
 ---
-name: microsoft-docs-ja
+name: microsoft-docs
 description: "Microsoft Learn と Microsoft 技術ドキュメントを日本語環境で調査・要約・参照するための Skill。Azure、.NET、C#、ASP.NET Core、Agent Framework、Aspire、Power Platform、Microsoft 365、Windows、GitHub、VS Code、コードサンプル検索、ja-jp/en-us 差分確認を扱う。"
+license: MIT
 ---
 
 # Microsoft Docs — 日本語環境向け Skill

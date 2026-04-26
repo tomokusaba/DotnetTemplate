@@ -1,6 +1,7 @@
 ---
-name: microsoft-agent-framework-ja
+name: microsoft-agent-framework
 description: "Microsoft Agent Framework を日本語環境で設計・実装・レビュー・移行するための Skill。.NET/C#、Python、IChatClient、ChatClientAgent、agents、workflows、tool calling、structured output、OpenTelemetry、Microsoft.Extensions.AI、Azure OpenAI、Microsoft Foundry、Semantic Kernel / AutoGen からの移行を扱う。"
+license: MIT
 ---
 
 # Microsoft Agent Framework — 日本語環境向け Skill
