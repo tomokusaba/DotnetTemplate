@@ -2,7 +2,7 @@
 name: ".NET レビューチェッカー"
 description: ".NET / C# の Reviewer とアクセシビリティ専門家の指摘が正当かどうかを読み取り専用で精査する Agent。ASP.NET Core のアクセシビリティ指摘を含めて Valid / Invalid / Needs clarification / Already addressed に分類し、コードは書き換えない。"
 model: GPT-5.5
-tools: ["changes", "codebase", "findTestFiles", "githubRepo", "problems", "search", "searchResults", "terminalLastCommand", "terminalSelection", "testFailure", "usages", "vscodeAPI"]
+tools: ["read", "search"]
 ---
 
 # .NET レビューチェッカー

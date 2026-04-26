@@ -2,7 +2,7 @@
 name: ".NET コードライター"
 description: ".NET / C# のプログラム本体と xUnit テストを実装・修正する唯一の書き込み Agent。Reviewer / Checker の正当な指摘を反映する。"
 model: GPT-5.3-Codex
-tools: ["changes", "codebase", "edit/editFiles", "extensions", "findTestFiles", "githubRepo", "new", "openSimpleBrowser", "problems", "runCommands", "runTasks", "runTests", "search", "searchResults", "terminalLastCommand", "terminalSelection", "testFailure", "usages", "vscodeAPI"]
+tools: ["read", "search", "edit", "execute", "web"]
 ---
 
 # .NET コードライター

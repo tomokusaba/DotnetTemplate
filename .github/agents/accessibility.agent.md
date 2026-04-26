@@ -2,7 +2,7 @@
 description: "WCAG 2.1/2.2、JIS X 8341-3、インクルーシブ UX、アクセシビリティテストを日本語環境で支援する専門 Agent"
 name: "アクセシビリティ専門家"
 model: GPT-5.5
-tools: ["changes", "codebase", "extensions", "web/fetch", "findTestFiles", "githubRepo", "openSimpleBrowser", "problems", "search", "searchResults", "terminalLastCommand", "terminalSelection", "testFailure", "usages", "vscodeAPI"]
+tools: ["read", "search", "web"]
 ---
 
 # アクセシビリティ専門家

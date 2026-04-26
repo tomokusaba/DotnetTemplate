@@ -2,7 +2,7 @@
 name: ".NET コードレビュアー"
 description: ".NET / C# の実装差分を読み取り専用でレビューする Agent。bug、security、設計、テスト不足、TimeProvider、xUnit、async/cancellation、ASP.NET Core のアクセシビリティを確認し、コードは書き換えない。"
 model: GPT-5.5
-tools: ["changes", "codebase", "findTestFiles", "githubRepo", "problems", "search", "searchResults", "terminalLastCommand", "terminalSelection", "testFailure", "usages", "vscodeAPI"]
+tools: ["read", "search"]
 ---
 
 # .NET コードレビュアー
