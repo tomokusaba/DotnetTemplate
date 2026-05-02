@@ -78,6 +78,7 @@
 
 | Skill | 用途 |
 |---|---|
+| `accessibility` | Web アクセシビリティ、WCAG / JIS、インクルーシブ UX、アクセシビリティテスト、PR レビュー |
 | `aspire` | .NET Aspire の AppHost、分散アプリ構成、サービス検出、統合、ダッシュボード、テスト |
 | `csharp-docs` | C# / .NET の XML ドキュメントコメント、API ドキュメント、サンプルコード |
 | `csharp-xunit` | xUnit による .NET / C# テスト設計、実装、保守 |

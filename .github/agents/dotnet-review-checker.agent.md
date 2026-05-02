@@ -40,6 +40,7 @@ tools: ["read", "search"]
 - 既存の project convention と矛盾していないか。
 - .NET / C# の実際の仕様に合っているか。
 - `TimeProvider`、xUnit、Microsoft Agent Framework の方針に合っているか。
+- アクセシビリティ指摘の WCAG 根拠は、W3C WAI の WCAG 日本語ページを必須の一次情報として確認されているか: https://www.w3.org/WAI/standards-guidelines/wcag/ja
 - ASP.NET Core の UI 変更では、アクセシビリティ指摘が WCAG 2.2、semantic HTML、keyboard/focus、form error、ARIA の観点で妥当か。
 - build / test / analyzer の失敗と関連しているか。
 - 修正した場合に副作用や過剰設計が増えないか。

@@ -20,6 +20,7 @@ tools: ["read", "search", "agent"]
 - 現在時刻は `DateTime.Now` / `DateTimeOffset.Now` / `DateTime.UtcNow` を直接使わず、`TimeProvider` を使います。
 - AI 操作は Microsoft Agent Framework を優先します。
 - ASP.NET Core アプリケーションでは、レビュー観点にアクセシビリティを含めます。
+- アクセシビリティ判断では、W3C WAI の WCAG 日本語ページを必須の一次情報として参照します: https://www.w3.org/WAI/standards-guidelines/wcag/ja
 - Microsoft / Azure / .NET API が曖昧な場合は Microsoft Learn の公式情報を確認します。
 - 既存の `.editorconfig`、`Directory.Build.props`、`Directory.Packages.props`、CI、テスト規約を優先します。
 
@@ -156,6 +157,7 @@ ASP.NET Core の UI / Razor / Blazor / MVC / Fluent UI Blazor 変更がある場
 Task for Accessibility Expert:
 - Review the current ASP.NET Core UI diff.
 - Read only. Do not edit files.
+- Use the W3C WAI WCAG Japanese page as the mandatory primary source for WCAG judgments: https://www.w3.org/WAI/standards-guidelines/wcag/ja
 - Focus on WCAG 2.2, JIS X 8341-3, semantic HTML, labels, keyboard/focus, ARIA, validation errors, contrast, Japanese UX, and screen reader behavior.
 - Return only actionable accessibility findings with file/line, severity, WCAG/JIS reference, evidence, suggested fix for Writer, and verification.
 ```

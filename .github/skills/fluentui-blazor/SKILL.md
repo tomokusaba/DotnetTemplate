@@ -10,6 +10,8 @@ license: MIT
 
 > **基本方針:** Fluent UI Blazor は Blazor の static web assets と JS initializer で CSS / JS を自動読み込みする。コアライブラリ用の `<script>` や `<link>` を手動追加しない。サービスベースの UI には root layout の provider が必須。
 
+> **アクセシビリティ一次情報:** アクセシビリティ要件や WCAG 達成基準を判断・説明する場合は、必ず W3C WAI の WCAG 日本語ページを一次情報として参照する: https://www.w3.org/WAI/standards-guidelines/wcag/ja
+
 ---
 
 ## 1. まず確認すること
@@ -41,6 +43,18 @@ license: MIT
 <!-- 不要。追加しない。 -->
 <link rel="stylesheet" href="_content/Microsoft.FluentUI.AspNetCore.Components/..." />
 <script src="_content/Microsoft.FluentUI.AspNetCore.Components/..."></script>
+```
+
+---
+
+### アクセシビリティは W3C WAI の WCAG 日本語ページを一次情報にする
+
+Fluent UI Blazor の component 固有の挙動は公式 demo / GitHub / Microsoft Learn を確認し、WCAG の達成基準、レベル、用語、適合方針は W3C WAI の WCAG 日本語ページを必ず確認する。
+
+一次情報:
+
+```text
+https://www.w3.org/WAI/standards-guidelines/wcag/ja
 ```
 
 ---
@@ -418,3 +432,4 @@ protected override async Task OnAfterRenderAsync(bool firstRender)
 | Fluent UI Blazor demo | https://www.fluentui-blazor.net/ |
 | Microsoft Fluent UI | https://developer.microsoft.com/fluentui |
 | Blazor documentation | https://learn.microsoft.com/ja-jp/aspnet/core/blazor/ |
+| W3C WAI WCAG 日本語ページ | https://www.w3.org/WAI/standards-guidelines/wcag/ja |
