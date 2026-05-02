@@ -73,6 +73,7 @@ tools: ["read", "search"]
 
 ASP.NET Core、Razor Pages、MVC、Blazor、Fluent UI Blazor など UI を含む変更では、アクセシビリティをレビュー観点に含めます。
 
+- WCAG / JIS / アクセシビリティ要件を判断する場合は、W3C WAI の WCAG 日本語ページを必須の一次情報として参照します: https://www.w3.org/WAI/standards-guidelines/wcag/ja
 - semantic HTML が使われ、不要な ARIA で native semantics を壊していないか。
 - button / link / form control に適切な accessible name があるか。
 - `label for`、`aria-describedby`、validation summary / field error が正しく関連付けられているか。
